@@ -26,7 +26,7 @@ $(document).keydown(function () {
 function presser(colour) {
    $("#" + colour).addClass("pressed");
    setTimeout(() => { $("#" + colour).removeClass("pressed") }, 200);
-   var audio = new Audio("sounds/" + colour + ".mp3");
+   var audio = new Audio(colour + ".mp3");
    audio.play();
 }
 
@@ -46,7 +46,7 @@ $(".btn").click(function () {
       }
       else {
          alert("GAME OVER");
-         var audio = new Audio("sounds/wrong.mp3");
+         var audio = new Audio("wrong.mp3");
          audio.play();
          $(".reset").show();
          $(".reset").animate({ opacity: '1' }, 500);
