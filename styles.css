@@ -158,6 +158,10 @@ button:hover {
 
 @media only screen and (max-width: 600px) {
 
+    .btn:hover {
+        content: none;
+    }
+    
     .container2 {
         height: 350px;
         margin: 0 auto;
